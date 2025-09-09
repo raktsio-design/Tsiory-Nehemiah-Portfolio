@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Rakotondrambelo Tsiory Nehemiah</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <span class="brand-name">Rakotondrambelo</span>
+                <span class="brand-surname">Tsiory Nehemiah</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#accueil" class="nav-link active">Accueil</a></li>
+                <li><a href="#apropos" class="nav-link">À propos</a></li>
+                <li><a href="#projets" class="nav-link">Projets</a></li>
+                <li><a href="#competences" class="nav-link">Compétences</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Section Accueil -->
+    <section id="accueil" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Je suis <span class="highlight">Tsiory Nehemiah</span>, Développeur en devenir<br>passionné par le web et le design !</h1>
+                <button class="cta-button" onclick="scrollToSection('projets')">Voir mes projets</button>
+            </div>
+            <div class="hero-image">
+                <div class="developer-illustration">
+                    <i class="fas fa-laptop-code"></i>
+                    <i class="fab fa-html5"></i>
+                    <i class="fab fa-css3-alt"></i>
+                    <i class="fab fa-js"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section À propos -->
+    <section id="apropos" class="about">
+        <div class="container">
+            <h2 class="section-title">À propos</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Je m'appelle <span class="highlight-text">Rakotondrambelo Tsiory Nehemiah</span>, passionné par la création de sites web modernes et interactifs.</p>
+                    <p>Je suis actuellement étudiant en <span class="highlight-text">développement web</span>, et je cherche à améliorer mes compétences en JavaScript, HTML et CSS.</p>
+                    <p>J'adore transformer mes idées en projets concrets et expérimenter avec les nouvelles technologies.</p>
+                    <button class="cv-button">
+                        <i class="fas fa-download"></i>
+                        Télécharger mon CV
+                    </button>
+                </div>
+                <div class="about-image">
+                    <div class="profile-picture" id="profilePicture">
+    <img src="images/profile.jpg" alt="Photo de profil" id="profileImage" style="display: block;">
+    <i class="fas fa-user" style="display: none;"></i>
+</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Projets -->
+    <section id="projets" class="projects">
+        <div class="container">
+            <h2 class="section-title">Mes Projets</h2>
+            <div class="projects-grid">
+                <div class="project-card" data-project="1">
+                    <div class="project-image">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Un mini-jeu interactif en JavaScript qui utilise des événements DOM</h3>
+                        <div class="project-tech">
+                            <span class="tech-tag">#HTML</span>
+                            <span class="tech-tag">#CSS</span>
+                            <span class="tech-tag">#JS</span>
+                        </div>
+                        <button class="project-button">Voir</button>
+                    </div>
+                </div>
+
+                <div class="project-card" data-project="2">
+                    <div class="project-image">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Un mini-jeu interactif en JavaScript qui utilise des événements DOM</h3>
+                        <div class="project-tech">
+                            <span class="tech-tag">#HTML</span>
+                            <span class="tech-tag">#CSS</span>
+                            <span class="tech-tag">#JS</span>
+                        </div>
+                        <button class="project-button">Voir</button>
+                    </div>
+                </div>
+
+                <div class="project-card" data-project="3">
+                    <div class="project-image">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Un mini-jeu interactif en JavaScript qui utilise des événements DOM</h3>
+                        <div class="project-tech">
+                            <span class="tech-tag">#HTML</span>
+                            <span class="tech-tag">#CSS</span>
+                            <span class="tech-tag">#JS</span>
+                        </div>
+                        <button class="project-button">Voir</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Compétences -->
+    <section id="competences" class="skills">
+        <div class="container">
+            <h2 class="section-title">Mes Compétences</h2>
+            <div class="skills-container">
+                <div class="skills-column">
+                    <h3>Soft Skills</h3>
+                    <div class="skill-item">
+                        <span class="skill-name">Gestion de projet</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-skill="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Résolution de problème</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-skill="90"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Adaptabilité</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-skill="80"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-column">
+                    <h3>Hard Skills</h3>
+                    <div class="skill-item">
+                        <span class="skill-name">HTML</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-skill="90"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">CSS</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-skill="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">JavaScript</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-skill="75"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">VS Code</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-skill="95"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <h2>Vous avez un <span class="highlight">projet en tête</span> ?<br>N'hésitez pas à me <span class="highlight">contacter</span></h2>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="prenom">Votre prénom</label>
+                            <input type="text" id="prenom" name="prenom" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="nom">Votre nom</label>
+                            <input type="text" id="nom" name="nom" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Votre sujet</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Votre message</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">Envoyer</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>Designed by <span class="highlight">Tsiory Nehemiah</span> with HTML CSS JS</p>
+                <p>Tous droits réservés - 2025</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal pour les projets -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modalContent">
+                <!-- Contenu dynamique des projets -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
